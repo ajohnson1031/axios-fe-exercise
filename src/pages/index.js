@@ -57,7 +57,7 @@ const Index = (props) => {
       <HeaderWrapper>
         <Title>More from Axios.com</Title>
         <Link href="https://www.axios.com" passHref>
-          <CallToAction>Visit Axios.com &#8594;</CallToAction>
+          <CallToAction isBottom={false}>Visit Axios.com &#8594;</CallToAction>
         </Link>
       </HeaderWrapper>
       <ArrowButton name="left" icon={leftArrow} onBtnPress={goDirection} />
@@ -71,7 +71,9 @@ const Index = (props) => {
         </StoryWrapper>
       </StoryWrapperOuter>
       <Dots content={content} setX={setX} />
-      <CallToAction isBottom={true}>Visit Axios.com &#8594;</CallToAction>
+      <Link href="https://www.axios.com" passHref>
+        <CallToAction isBottom={true}>Visit Axios.com &#8594;</CallToAction>
+      </Link>
     </MainWrapper>
   );
 };
@@ -100,7 +102,7 @@ const Title = styled.h1`
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 48px;
-  @media (max-width: 375px) {
+  @media (max-width: 980px) {
     font-size: 32px;
   }
 `;

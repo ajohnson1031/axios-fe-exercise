@@ -7,7 +7,7 @@ const StoryWrapper = styled.div`
   transform: translateX(${(props) => props.transform}%);
   transition-duration: 0.25s;
 
-  @media (max-width: 375px) {
+  @media (max-width: 980px) {
     transform: translateX(
       ${(props) => props.transform * Math.ceil(props.maxW / props.minW)}%
     );

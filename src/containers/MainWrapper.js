@@ -15,7 +15,7 @@ export const MainWrapper = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
 
-  @media (max-width: 375px) {
+  @media (max-width: 980px) {
     padding: 40px 0 0 20px;
   }
 `;

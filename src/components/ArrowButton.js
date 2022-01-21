@@ -26,7 +26,7 @@ const Button = styled.button`
   bottom: 42.64%;
   transform: translateY(-45%);
 
-  @media (max-width: 375px) {
+  @media (max-width: 980px) {
     display: none;
   }
 `;

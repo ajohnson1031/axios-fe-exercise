@@ -29,6 +29,11 @@ const Story = ({ item }) => {
               src="story_image.jpg"
               width={333}
               height={205.34}
+              alt={
+                primary_image
+                  ? headline
+                  : "President Biden hands up with a dollar sign."
+              }
             />
           </GoLink>
         </Link>

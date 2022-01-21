@@ -14,7 +14,10 @@ const CallToAction = styled.a.attrs({ target: "_blank" })`
   text-align: center;
 
   @media (max-width: 375px) {
-    display: ${(props) => (props.isBottom ? "inline-block" : "none")};
+    display: ${(props) => (props.isBottom ? "inline-flex" : "none")};
+    justify-content: center;
+    width: calc(100% - 20px);
+    margin-bottom: 40px;
   }
 `;
 

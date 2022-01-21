@@ -71,6 +71,7 @@ const Index = (props) => {
         </StoryWrapper>
       </StoryWrapperOuter>
       <Dots content={content} setX={setX} />
+      <CallToAction isBottom={true}>Visit Axios.com &#8594;</CallToAction>
     </MainWrapper>
   );
 };

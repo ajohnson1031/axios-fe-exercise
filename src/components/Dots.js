@@ -13,7 +13,7 @@ const Dots = ({ content, setX }) => {
       }));
     });
 
-    setX((-100 / content.length) * (idx * 3));
+    setX((-100 / content.length) * (idx * 3.055));
   };
 
   useEffect(() => {
@@ -57,7 +57,7 @@ const DotWrapper = styled.div`
   height: fit-content;
   max-height: 8px;
   align-items: center;
-  margin-bottom: 64px;
+  margin-bottom: 24px;
 `;
 
 export default Dots;
